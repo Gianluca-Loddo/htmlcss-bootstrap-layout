@@ -86,80 +86,84 @@ Altro utile
     <!-- Navbar / Titolo Principale -->
     <div class="text-center mt-4"> <!-- centra il testo e mt-4 da margine sopra-->
         <h2>Bootstrap 5 Responsive Grid</h2>
-        <p class="text-muted">Layout a griglia con diversi breakpoint (sm, md, lg).</p> <!-- text-muted colore grigio chiaro -->
+        <p class="text-muted">Layout a griglia con diversi breakpoint (sm, md, lg).</p>
+        <!-- text-muted colore grigio chiaro -->
     </div>
 
-<!-- Container Principale -->
-<div class="container mt-5"> <!-- container mantiene tutto al centro e lascia margine ai lati -->
+    <!-- Container Principale -->
+    <div class="container mt-5"> <!-- container mantiene tutto al centro e lascia margine ai lati -->
 
-    <!-- RIGA 1: 2 colonne -->
-    <div class="row"> <!--Inizia una riga: è come una striscia su cui si "poggiano" le colonne -->
-        
-        <!-- PRIMA COLONNA (BIANCA) -->
-        <div class="col-12 col-md-6 col-lg-4 bg-light p-3">
-            <!--  Crea una colonna con:
+        <!-- RIGA 1: 2 colonne -->
+        <div class="row"> <!--Inizia una riga: è come una striscia su cui si "poggiano" le colonne -->
+
+            <!-- PRIMA COLONNA (BIANCA) -->
+            <div class="col-12 col-md-6 col-lg-4 bg-light p-3">
+                <!--  Crea una colonna con:
                     col-12 = larga tutta su telefoni
                     col-md-6 = mezza su tablet
                     col-lg-4 = 1/3 su PC
                     bg-light = sfondo chiaro
                     p-3 = spazio interno (padding)-->
-            <h5>Colonna 1</h5>
-            <p>Larghezza intera su dispositivi piccoli, metà larghezza su dispositivi medi e un terzo su dispositivi grandi .</p>
-        </div>
+                <h5>Colonna 1</h5>
+                <p>Larghezza intera su dispositivi piccoli, metà larghezza su dispositivi medi e un terzo su dispositivi
+                    grandi .</p>
+            </div>
 
-        <!-- SECONDA COLONNA (GRIGIA)-->
-        <div class="col-12 col-md-6 col-lg-8 bg-secondary text-white p-3"> <!-- text-white per rendere leggibile il testo su sfondo scuro -->
-            <!--  Seconda colonna:
+            <!-- SECONDA COLONNA (GRIGIA)-->
+            <div class="col-12 col-md-6 col-lg-8 bg-secondary text-white p-3">
+                <!-- text-white per rendere leggibile il testo su sfondo scuro -->
+                <!--  Seconda colonna:
                     col-12 = tutta larghezza su mobile
                     col-md-6 = metà su tablet
                     col-lg-8 = 2/3 su PC
                     bg-secondary = grigio scuro
                     text-white = testo bianco (per contrasto)
                     p-3 = padding-->
-            <h5>Colonna 2</h5>
-            <p>Larghezza intera su dispositivi piccoli, metà larghezza su dispositivi medi e due terzi su dispositivi grandi .</p>
+                <h5>Colonna 2</h5>
+                <p>Larghezza intera su dispositivi piccoli, metà larghezza su dispositivi medi e due terzi su
+                    dispositivi grandi .</p>
+            </div>
+
+        </div>
+
+
+        <!-- RIGA 2: 3 colonne -->
+        <div class="row mt-4">
+            <div class="col-6 col-md-4 bg-primary text-white p-3">
+                <h5>Colonna 1</h5>
+                <p>Metà larghezza su dispositivi piccoli e un terzo su dispositivi medi e più grandi.</p>
+            </div>
+            <div class="col-6 col-md-4 bg-success text-white p-3">
+                <h5>Colonna 2</h5>
+                <p>Metà larghezza su dispositivi piccoli e un terzo su dispositivi medi e più grandi.</p>
+            </div>
+            <div class="col-12 col-md-4 bg-danger text-white p-3">
+                <h5>Colonna 3</h5>
+                <p>Larghezza intera su dispositivi piccoli (col-12) e un terzo su dispositivi medi e più grandi.</p>
+            </div>
+        </div>
+
+        <!-- RIGA 3: 4 colonne -->
+        <div class="row mt-4">
+            <div class="col-6 col-md-3 bg-info text-white p-3">
+                <h5>Colonna 1</h5>
+                <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+            </div>
+            <div class="col-6 col-md-3 bg-warning text-white p-3">
+                <h5>Colonna 2</h5>
+                <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+            </div>
+            <div class="col-6 col-md-3 bg-dark text-white p-3">
+                <h5>Colonna 3</h5>
+                <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+            </div>
+            <div class="col-6 col-md-3 bg-light p-3">
+                <h5>Colonna 4</h5>
+                <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+            </div>
         </div>
 
     </div>
-
-
-<!-- RIGA 2: 3 colonne -->
-    <div class="row mt-4">
-      <div class="col-6 col-md-4 bg-primary text-white p-3">
-        <h5>Colonna 1</h5>
-        <p>Metà larghezza su dispositivi piccoli e un terzo su dispositivi medi e più grandi.</p>
-      </div>
-      <div class="col-6 col-md-4 bg-success text-white p-3">
-        <h5>Colonna 2</h5>
-        <p>Metà larghezza su dispositivi piccoli e un terzo su dispositivi medi e più grandi.</p>
-      </div>
-      <div class="col-12 col-md-4 bg-danger text-white p-3">
-        <h5>Colonna 3</h5>
-        <p>Larghezza intera su dispositivi piccoli (col-12) e un terzo su dispositivi medi e più grandi.</p>
-      </div>
-    </div>
-
-<!-- RIGA 3: 4 colonne -->
-    <div class="row mt-4">
-      <div class="col-6 col-md-3 bg-info text-white p-3">
-        <h5>Colonna 1</h5>
-        <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
-      </div>
-      <div class="col-6 col-md-3 bg-warning text-white p-3">
-        <h5>Colonna 2</h5>
-        <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
-      </div>
-      <div class="col-6 col-md-3 bg-dark text-white p-3">
-        <h5>Colonna 3</h5>
-        <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
-      </div>
-      <div class="col-6 col-md-3 bg-light p-3">
-        <h5>Colonna 4</h5>
-        <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
-      </div>
-    </div>
-
-</div>  
 
 </body>
 
