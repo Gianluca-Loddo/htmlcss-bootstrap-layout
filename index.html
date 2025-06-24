@@ -90,19 +90,36 @@ Altro utile
     </div>
 
 <!-- Container Principale -->
-<div class="container mt-5">
+<div class="container mt-5"> <!-- container mantiene tutto al centro e lascia margine ai lati -->
+
     <!-- RIGA 1: 2 colonne -->
-    <div class="row">
+    <div class="row"> <!--Inizia una riga: è come una striscia su cui si "poggiano" le colonne -->
+        
+        <!-- PRIMA COLONNA (BIANCA) -->
         <div class="col-12 col-md-6 col-lg-4 bg-light p-3">
-            <!-- schermi piccli (col-12) schermi medi -> metà (col-md-6) schermi grandi (col-lg-4 o col-lg-8 -> 1/3 o 2/3)
-            colori (bg-light , bg-secondary) padding interno (p-3)-->
+            <!--  Crea una colonna con:
+                    col-12 = larga tutta su telefoni
+                    col-md-6 = mezza su tablet
+                    col-lg-4 = 1/3 su PC
+                    bg-light = sfondo chiaro
+                    p-3 = spazio interno (padding)-->
             <h5>Colonna 1</h5>
             <p>Larghezza intera su dispositivi piccoli, metà larghezza su dispositivi medi e un terzo su dispositivi grandi .</p>
         </div>
+
+        <!-- SECONDA COLONNA (GRIGIA)-->
         <div class="col-12 col-md-6 col-lg-8 bg-secondary text-white p-3"> <!-- text-white per rendere leggibile il testo su sfondo scuro -->
+            <!--  Seconda colonna:
+                    col-12 = tutta larghezza su mobile
+                    col-md-6 = metà su tablet
+                    col-lg-8 = 2/3 su PC
+                    bg-secondary = grigio scuro
+                    text-white = testo bianco (per contrasto)
+                    p-3 = padding-->
             <h5>Colonna 2</h5>
             <p>Larghezza intera su dispositivi piccoli, metà larghezza su dispositivi medi e due terzi su dispositivi grandi .</p>
         </div>
+
     </div>
 
 
@@ -149,20 +166,35 @@ Altro utile
 </html>
 
 
-<!-- 
-col-12: intera larghezza su mobile
+<!--    col-12: intera larghezza su mobile
+        col-6: metà
+        col-md-4: 1/3 da tablet in su
+        col-md-3: 1/4 da tablet in su
+        bg-primary, bg-danger, bg-dark, ecc.: colori di sfondo Bootstrap
+        text-white: colore del testo bianco (per leggibilità)
+        p-3: padding interno (spazio dentro il box)
+        mt-4: margine superiore (space tra le righe)
 
-col-6: metà
+APPRONFODIMENTO SUI BREAKPOINT BOOTSTRAP 5
 
-col-md-4: 1/3 da tablet in su
+| **Classe** | **Min. larghezza schermo** | **Esempio di dispositivo**          | **Nome "tecnico"**        |
+| ---------- | -------------------------- | ----------------------------------- | ------------------------- |
+| `col-`     | 0 px                       | Smartphone piccoli                  | (nessun breakpoint)       |
+| `col-sm-`  | ≥ 576 px                   | Smartphone larghi (es. iPhone Plus) | `sm` = small              |
+| `col-md-`  | ≥ 768 px                   | Tablet verticali (es. iPad)         | `md` = medium             |
+| `col-lg-`  | ≥ 992 px                   | Laptop piccoli                      | `lg` = large              |
+| `col-xl-`  | ≥ 1200 px                  | Desktop grandi                      | `xl` = extra large        |
+| `col-xxl-` | ≥ 1400 px                  | Monitor giganti (4K)                | `xxl` = extra-extra large |
 
-col-md-3: 1/4 da tablet in su
+Per quanto riguarda i dispositivi mobili dunque bisogna fare attenzione:
 
-bg-primary, bg-danger, bg-dark, ecc.: colori di sfondo Bootstrap
+sm è per smartphone larghi (es. iPhone Plus) ma per quelli più piccoli non serve 
+in quanto Bootstrap considera tutto ciò che è inferiore a 576px come "col-12" (intera larghezza). 
 
-text-white: colore del testo bianco (per leggibilità)
+RICAPITOLANDO:
 
-p-3: padding interno (spazio dentro il box)
-
-mt-4: margine superiore (space tra le righe)
+| Classe      | Dove funziona                                                   | Esempio               | 
+| ----------- | --------------------------------------------------------------- | --------------------  |
+| `col-12`    | **Sempre**, su **tutti gli schermi** (anche smartphone piccoli) | 📱 🖥️                 |
+| `col-sm-12` | Solo da **small** in su = **tablet piccolo** (minimo 576px)     | ❌ smartphone < 576px |
 -->
